@@ -1,24 +1,13 @@
 <!DOCTYPE html>
-var element = document.createElement('div');
+<html>
 
-element.innerHTML = 'Hello, DOM';
-element.style.backgroundColor = '#f9f9f9';
-element.style.color = 'red';
+  <head>
+    <title>Creating and Inserting DOM Elements</title>
+  </head>
 
-document.body.appendChild(element);
+  <body>
+    <main id="main"></main>
+    <script src="js/index.js"></script>
+  </body>
 
-element.style.textAlign = 'center';
-
-var ul = document.createElement('ul');
- for (let i = 0; i < 3; i ++) {
-   let li = document.createElement('li');
-   li.innerHTML = (i + 1).tostring();
-   ul.appendChild(li);
- }
-element.appendChild(ul);
-
-ul.style.textAlign = 'left';
-
-ul.removeChild(ul.querySelector('li:nth-child(2)'));
-
-ul.remove();
+</html>
